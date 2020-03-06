@@ -2,33 +2,61 @@
   "name": "gauntlet",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --open --mode=development",
+    "build": "webpack --mode=production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "@types/lodash": "^4.14.144",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^12.12.21",
+    "@types/node-sass": "^4.11.0",
+    "@types/qs": "^6.9.0",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-redux": "^7.1.4",
+    "@types/react-router": "^5.1.2",
+    "@types/react-router-dom": "^4.3.5",
+    "@types/styled-components": "^4.4.1",
+    "@types/styled-system": "^5.1.1",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.4.0",
+    "dangerously-set-html-content": "^1.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-webpack": "^0.11.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-harddisk-plugin": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "isomorphic-style-loader": "^4.0.0",
+    "node-sass": "^4.13.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "sass": "^1.23.0-module.beta.1",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^4.1.3"
   }
 }
