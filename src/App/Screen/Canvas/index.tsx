@@ -4,12 +4,6 @@ import CanvasStyled, { User, UserHolder, ImageButton } from './Canvas.Styled';
 import TextInput from '../../Components/TextInput';
 import Button from '../../Components/Button';
 
-const thanosGauntlet = require('../../Imgs/thanosGauntlet.png');
-const thanosSnap = require('../../Imgs/thanosSnap.jpg');
-const ironManGauntlet = require('../../Imgs/ironmanGauntlet.png');
-const ironManSnap = require('../../Imgs/ironmanSnap.png');
-const userIcon = require('../../Imgs/userIcon.png');
-
 class Canvas extends React.Component<any, any> {
     ctx: CanvasRenderingContext2D;
 
@@ -215,7 +209,7 @@ class Canvas extends React.Component<any, any> {
         return (
             <User className={fade} id={name} key={name}>
                 <figure>
-                    <img src={userIcon.default} alt={name} />
+                    <img src="https://drive.google.com/thumbnail?id=1b1g9IWfCjq9mafL0uDZ7n6bjVwTuo5eV" alt={name} />
                 </figure>
                 <span>
                     {name}
@@ -231,10 +225,10 @@ class Canvas extends React.Component<any, any> {
                 <ImageButton onClick={() => this.onSnap()} disabled={fade === 'hidden'}>
                     <div className="thanos-btn">
                         <figure className="thanos-gauntlet">
-                            <img src={thanosGauntlet.default} alt="thanos" />
+                            <img src="https://drive.google.com/thumbnail?id=1vglF535rHQPMDpQ6ezYBQa5SlqwxTn-9" alt="thanos" />
                         </figure>
                         <figure className="thanos-snap">
-                            <img src={thanosSnap.default} alt="thanos" />
+                            <img src="https://drive.google.com/thumbnail?id=1KX6tJTA0cuPdXKPmwejJvQLjh_UaUPLo" alt="thanos" />
                         </figure>
                     </div>
                 </ImageButton>
@@ -250,10 +244,10 @@ class Canvas extends React.Component<any, any> {
                 <ImageButton onClick={() => this.onSnap()}>
                     <div className="ironman-btn">
                         <figure className="ironman-gauntlet">
-                            <img src={ironManGauntlet.default} alt="ironman" />
+                            <img src="https://drive.google.com/thumbnail?id=13jM0z0hcqOYHavniACe4cmf3QTCel6HF" alt="ironman" />
                         </figure>
                         <figure className="ironman-snap">
-                            <img src={ironManSnap.default} alt="ironman" />
+                            <img src="https://drive.google.com/thumbnail?id=1hPcLEDt8rrupaVxNcOLyFpLNpl4vt19V" alt="ironman" />
                         </figure>
                     </div>
                 </ImageButton>
